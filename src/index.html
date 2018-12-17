@@ -6,11 +6,22 @@
     <title></title>
     <script src="js/mui.min.js"></script>
     <link href="css/mui.min.css" rel="stylesheet"/>
-    <script type="text/javascript" charset="utf-8">
-      	mui.init();
-    </script>
+   
 </head>
 <body>
-	
+	<header class="mui-bar mui-bar-nav">
+		<h1 class="mui-title">同程艺龙酒店火车票机票</h1>
+	</header>
+    <div class="mui-content">
+			<button type="button" class="mui-btn mui-btn-blue">火车票查询</button>
+    </div>
+	 <script type="text/javascript" charset="utf-8">
+      	mui.init();
+		var btn = document.querySelector('.mui-btn-blue');
+		btn.onclick = function(){
+			console.log(11)
+			location.href = 'deatil.html'
+		}
+    </script>
 </body>
 </html>

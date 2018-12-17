@@ -17,7 +17,7 @@ gulp.task('server',function(){
     .pipe(server({
         port:8888,
         proxies:[
-            {source:'/users/api/getDate',target:"http://169.254.226.15:3000/users/api/getDate"}
+            {source:'/users/get/train',target:"http://169.254.226.15:3000/users/get/train"}
         ]
     }))
 })
